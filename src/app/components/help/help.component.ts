@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HelpComponent {
 
+  flag = false;
+
+  changeState(){
+    this.flag = !this.flag;
+    console.log(this.flag);
+  }
 }

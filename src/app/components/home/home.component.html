@@ -1,4 +1,20 @@
 <app-navbar></app-navbar>
 <div class="container space-top">
-    <p>home works!</p>
+  <h3>Students</h3>
+  <hr>
+  <br>
+
+  <div *ngFor="let student of students; let position=index">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png"
+        alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text">No: {{ position + 1 }}</p>
+        <h5 class="card-title">Name: {{ student.name }}</h5>
+        <p class="card-text">Age: {{ student.age }}</p>
+        <p class="card-text">email: {{ student.email }}</p>
+      </div>
+    </div>
+  </div>
+
 </div>
