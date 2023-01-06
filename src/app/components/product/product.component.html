@@ -1,0 +1,11 @@
+<div class="col">
+  <div class="card" style="width: 18rem;">
+    <img [src]="'assets/img/' + myProduct.img" class="card-img-top" alt="">
+    <div class="card-body">
+      <h5 class="card-title">{{ myProduct.name | titlecase }}</h5>
+      <p class="card-text">{{ myProduct.price | currency:'USD':'symbol'}}</p>
+      <p class="card-text">{{ myProduct.description }}</p>
+      <a class="btn btn-primary">Detail</a>
+    </div>
+  </div>
+</div>

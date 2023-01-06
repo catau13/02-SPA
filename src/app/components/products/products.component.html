@@ -1,0 +1,17 @@
+<div class="animated fadeIn fast">
+  <h1>Products</h1>
+  <h3>Look at our entire catalog</h3>
+  <hr>
+
+  <div *ngIf="products.length>0; else noProducts">
+    <div class="row row-cols1 row-cols-md-4 g-5">
+      <app-product [myProduct]="product" *ngFor="let product of products"></app-product>
+    </div>
+  </div>
+
+  <ng-template #noProducts>
+    <p>There are not products</p>
+  </ng-template>
+
+
+</div>
